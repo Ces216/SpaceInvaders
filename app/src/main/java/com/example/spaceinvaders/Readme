@@ -24,7 +24,7 @@ con sus disparos. La puntuacion aumenta 10 puntos por cada enemigo eliminado.
 ## Instalacion
 
 1. Clona el repositorio:
-   git clone https://github.com/Ces216/JavaRepo/tree/main/2DAM/ProgMoviles/VideojuegosAndroid/app/src/main/java/com/example/spaceinvaders
+   git clone https://github.com/Ces216/SpaceInvaders.git
 
 2. Abre Android Studio y selecciona "Open an existing project".
 
