@@ -1,0 +1,62 @@
+# Space Invaders - Android (Java)
+
+Minijuego 2D tipo Space Invaders desarrollado en Android nativo con Java.
+Proyecto creado para la asignatura Programacion Multimedia y Dispositivos Moviles.
+
+## Descripcion
+
+El jugador controla una nave en la parte inferior de la pantalla y debe eliminar
+todas las oleadas de enemigos antes de que lleguen a su posicion o lo destruyan
+con sus disparos. La puntuacion aumenta 10 puntos por cada enemigo eliminado.
+
+## Controles
+
+- Arrastra el dedo horizontalmente para mover la nave.
+- Toca la pantalla para disparar.
+- Si la partida termina, toca la pantalla para reiniciar.
+
+## Requisitos
+
+- Android Studio Hedgehog (2023.1.1) o superior.
+- Android SDK 24 o superior (Android 7.0 Nougat).
+- JDK 8 o superior.
+
+## Instalacion
+
+1. Clona el repositorio:
+   git clone https://github.com/Ces216/JavaRepo/tree/main/2DAM/ProgMoviles/VideojuegosAndroid/app/src/main/java/com/example/spaceinvaders
+
+2. Abre Android Studio y selecciona "Open an existing project".
+
+3. Navega hasta la carpeta descargada y haz clic en OK.
+
+4. Espera a que Gradle sincronice las dependencias.
+
+5. Conecta un dispositivo Android o inicia un emulador (API 24+).
+
+6. Pulsa el boton Run (triangulo verde) o usa Shift+F10.
+
+## Descarga directa
+
+El archivo APK compilado esta disponible en la seccion Releases de este repositorio.
+
+## Estructura del proyecto
+
+```
+app/src/main/
+    java/com/example/spaceinvaders/
+        MainActivity.java   -- Punto de entrada, gestiona el ciclo de vida
+        GameView.java       -- SurfaceView + Game Loop + logica principal
+        Jugador.java        -- Entidad de la nave del jugador
+        Enemigo.java        -- Entidad de cada invasor
+        Disparo.java        -- Proyectil del jugador o de un enemigo
+    AndroidManifest.xml
+```
+
+## Tecnologias
+
+- Android nativo (Java)
+- SurfaceView + SurfaceHolder
+- Hilo secundario manual (Thread + Runnable)
+- Deteccion de colisiones con Rect.intersects()
+- Canvas y Paint para el renderizado
